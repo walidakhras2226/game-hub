@@ -18,7 +18,7 @@ const ExpandableText = ({ children }: Properties) => {
   if (children.length <= charLimit) return <Text>{children}</Text>;
 
   return (
-    <Text>
+    <Text paddingRight={1}>
       {formattedText}
       <Button
         size="xs"
